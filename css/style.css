@@ -1,15 +1,49 @@
-body, html{
+body, html {
     height: 100%;
     width: 100%;
 }
 
-html{
+html {
     font-family: Merriweather,'Helvetica Neue',Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+}
+
+ul {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    display: block;
+}
+
+nav {
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+nav li {
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
 #Main {
     background-position: center center;
     height: 100vh;
     width: auto;
-    color: aquamarine;
+    background-image: url(../img/spaceback.jpg);
+    background-attachment: fixed;
+}
+
+section {
+    padding: 8rem 0;
 }
