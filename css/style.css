@@ -8,7 +8,8 @@ html {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    padding: 4rem 0;
 }
 
 ul {
@@ -37,13 +38,12 @@ nav a {
 }
 
 #Main {
+    -webkit-height: 100%;
     background-position: center center;
-    height: 100vh;
-    width: auto;
     background-image: url(../img/spaceback.jpg);
     background-attachment: fixed;
 }
 
 section {
-    padding: 8rem 0;
+    padding: 4rem 0;
 }
