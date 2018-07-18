@@ -38,12 +38,17 @@ nav a {
 }
 
 #Main {
-    -webkit-height: 100%;
+    height: auto;
     background-position: center center;
-    background-image: url(../img/spaceback.jpg);
+    background-image: url(../img/mars-back.jpg);
     background-attachment: fixed;
 }
 
 section {
     padding: 4rem 0;
+}
+
+.btn {
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+/*    border-radius: 5%;*/
 }
