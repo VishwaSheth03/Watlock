@@ -39,7 +39,7 @@ $(document).ready(function () {
         `
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
     <div class="container">
-    <a class="navbar-brand" href="watlock.html">Home</a>
+    <a class="navbar-brand" href="`+SCRIPT_ROOT+`watlock.html">Home</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
