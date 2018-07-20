@@ -24,7 +24,7 @@ p.footer {
  * --------------------------------------------- */
  .timeline {
     list-style: none;
-    padding: 10px 0;
+    padding: 4rem 2rem;
     position: relative;
     font-weight: 300;
 }
@@ -118,9 +118,6 @@ p.footer {
 }
 .timeline-badge > a {
     color: black!important;
-}
-.timeline-badge a:hover {
-    color: #dcdcdc !important;
 }
 .timeline-title {
     margin-top: 0;
