@@ -34,14 +34,15 @@ $(document).ready(function () {
     let script_list = ["vendor/jquery/jquery.min.js", "vendor/scrollreveal/scrollreveal.min.js", "vendor/jquery-easing/jquery.easing.min.js",
         "js/main.js", "vendor/bootstrap/js/bootstrap.bundle.min.js"]
     script_list.forEach(dynamicallyLoadScript)
-
-    let dark = (SCRIPT_ROOT=="./")?" ":"bg-dark";
+{/* <img class="rounded" src="`+SCRIPT_ROOT+`img/logo.jpg" style="width: 40px"; height="auto";> */}
+    
+    let dark = (SCRIPT_ROOT=="./"&& $(window).width()>785)?" ":"bg-dark";
     $('nav').html(
         `
     <nav class="navbar navbar-expand-md navbar-dark fixed-top `+dark+`" id="mainNav">
         <div class="container">
             
-            <a class="navbar-brand" href="`+SCRIPT_ROOT+`watlock.html"><img class="rounded" src="`+SCRIPT_ROOT+`img/logo.jpg" style="width: 40px"; height="auto";></a>
+            <a class="navbar-brand" href="`+SCRIPT_ROOT+`watlock.html">Home</a>
             
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -69,39 +70,18 @@ $(document).ready(function () {
         
     </nav>
     `);
-    
-    // $('bottomnav').html(
-    //     `<section id="Social">
-    //         <div class="container">
-    //             <div class="row">
-    //                 <div class="col-md-6 mx-auto text-center">
-    //                     <a href="https://www.facebook.com/WaterlooAirlock/" target="_blank" id="social_media_icon">
-    //                         <i class="fa fa-facebook-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-    //                     </a>
-    //                 </div>
-    //                 <div class="col-md-6 mx-auto text-center">
-    //                     <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
-    //                         <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-    //                     </a>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </section>`);
+
     $('footer').addClass('footer').html(`
-    <div class="container" style="padding:0; margin:0; height:40px;">
-        
-            <div class="text-right">
-                <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
-                    <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-                </a>
-                &nbsp
-                <a href="https://www.facebook.com/WaterlooAirlock/" target="_blank" id="social_media_icon">
-                    <i class="fa fa-facebook-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-                </a>
-            </div>
-            
-        
+    <div class="container text-right" >     
+        <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
+            <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
+        </a>
+        &nbsp
+        <a href="https://www.facebook.com/WaterlooAirlock/" target="_blank" id="social_media_icon">
+            <i class="fa fa-facebook-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
+        </a>
     </div>
     `)
+
 
 });
