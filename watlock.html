@@ -48,6 +48,9 @@
     .main-content {
         margin-top: 20px;
     }
+
+
+
 </style>
 
 <head>
@@ -131,9 +134,16 @@
         let top = $(window).scrollTop();
         if(top >=150){
             $('nav').addClass("bg-dark")
+        }else if($(window).width()>785){
+            $('nav').removeClass("bg-dark")
+        }
+    $(window).resize(function(){
+        if($(window).width()<=785){
+            $('nav').addClass("bg-dark")
         }else{
             $('nav').removeClass("bg-dark")
         }
+    })
         
     })
 </script>
