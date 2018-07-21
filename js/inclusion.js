@@ -69,39 +69,18 @@ $(document).ready(function () {
         
     </nav>
     `);
-    
-    // $('bottomnav').html(
-    //     `<section id="Social">
-    //         <div class="container">
-    //             <div class="row">
-    //                 <div class="col-md-6 mx-auto text-center">
-    //                     <a href="https://www.facebook.com/WaterlooAirlock/" target="_blank" id="social_media_icon">
-    //                         <i class="fa fa-facebook-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-    //                     </a>
-    //                 </div>
-    //                 <div class="col-md-6 mx-auto text-center">
-    //                     <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
-    //                         <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-    //                     </a>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </section>`);
+
     $('footer').addClass('footer').html(`
-    <div class="container" style="padding:0; margin:0; height:40px;">
-        
-            <div class="text-right">
-                <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
-                    <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-                </a>
-                &nbsp
-                <a href="https://www.facebook.com/WaterlooAirlock/" target="_blank" id="social_media_icon">
-                    <i class="fa fa-facebook-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
-                </a>
-            </div>
-            
-        
+    <div class="container text-right" >     
+        <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
+            <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
+        </a>
+        &nbsp
+        <a href="https://www.facebook.com/WaterlooAirlock/" target="_blank" id="social_media_icon">
+            <i class="fa fa-facebook-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
+        </a>
     </div>
     `)
+
 
 });

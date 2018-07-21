@@ -11,6 +11,10 @@
 
     /* } */
 
+    nav{
+        transition: background-color 400ms !important;
+        -webkit-transition: background-color 400ms !important; /* Safari */
+    }
     .heading-container {
         color: white!important;
         margin-top: 20%!important;
@@ -112,13 +116,26 @@
 
             <img class="rounded mx-auto d-block main-content" src="img/team.jpg" width="100%" height="auto">
         </div>
-        <footer></footer>
+        
     </div>
+    <footer></footer>
 
 
 </body>
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="js/inclusion.js"></script>
+
+<script>
+     $(window).scroll(function(){
+        let top = $(window).scrollTop();
+        if(top >=150){
+            $('nav').addClass("bg-dark")
+        }else{
+            $('nav').removeClass("bg-dark")
+        }
+        
+    })
+</script>
 
 </html>
