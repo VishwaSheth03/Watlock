@@ -65,5 +65,23 @@ $(document).ready(function () {
     </div>
     </nav>
     `);
+    
+    $('bottomnav').html(
+        `<section id="Social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto text-center">
+                        <a href="https://www.facebook.com/WaterlooAirlock/" target="_blank" id="social_media_icon">
+                            <i class="fa fa-facebook-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 mx-auto text-center">
+                        <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
+                            <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>`);
 
 });
