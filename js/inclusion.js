@@ -40,7 +40,8 @@ $(document).ready(function () {
         `
     <nav class="navbar navbar-expand-md navbar-dark fixed-top `+dark+`" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="`+SCRIPT_ROOT+`watlock.html">Home</a>
+            
+            <a class="navbar-brand" href="`+SCRIPT_ROOT+`watlock.html"><img class="rounded" src="`+SCRIPT_ROOT+`img/logo.jpg" style="width: 40px"; height="auto";></a>
             
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -87,9 +88,9 @@ $(document).ready(function () {
     //         </div>
     //     </section>`);
     $('footer').addClass('footer').html(`
-    <div class="container">
+    <div class="container" style="padding:0; margin:0; height:40px;">
         
-            <div style="text-align:right">
+            <div class="text-right">
                 <a href="https://www.linkedin.com/company/watlock/" target="_blank" id="social_media_icon">
                     <i class="fa fa-linkedin-square fa-4x mb-3 media-icon" aria-hidden="true"></i>
                 </a>
@@ -100,7 +101,7 @@ $(document).ready(function () {
             </div>
             
         
-    </div
+    </div>
     `)
 
 });
